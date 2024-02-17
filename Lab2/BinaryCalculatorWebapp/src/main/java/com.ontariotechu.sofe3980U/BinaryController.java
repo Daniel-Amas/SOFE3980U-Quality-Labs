@@ -15,7 +15,7 @@ public class BinaryController {
 		model.addAttribute("operand1Focused", operand1.length()>0);
         return "calculator";
 	}
-	
+
 	@PostMapping("/")
 	public String result(@RequestParam(name="operand1", required=false, defaultValue="") String operand1,
 	@RequestParam(name="operator", required=false, defaultValue="") String operator ,

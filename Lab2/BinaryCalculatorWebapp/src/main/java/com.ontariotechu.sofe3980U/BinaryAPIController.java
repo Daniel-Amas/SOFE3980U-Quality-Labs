@@ -17,7 +17,7 @@ public class BinaryAPIController {
         return  Binary.add(number1,number2).getValue();
 		// http://localhost:8080/add?operand1=111&operand2=1010
 	}
-	
+
 	@GetMapping("/add_json")
 	public BinaryAPIResult addJSON(@RequestParam(name="operand1", required=false, defaultValue="") String operand1,
                        @RequestParam(name="operand2", required=false, defaultValue="") String operand2) {

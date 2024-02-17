@@ -30,11 +30,11 @@ public class Binary
 		//beg has the index of the first non zero digit in the number
 		this.number=number.substring(beg); // exclude the trailing zeros if any
 		// uncomment the following code
-		
+
 		if(this.number=="") { // replace empty strings with a single zero
 			this.number="0";
 		}
-		
+
     }
 	/**
 	* Return the binary value of the variable
@@ -77,9 +77,10 @@ public class Binary
 		}
 		Binary result=new Binary(num3);  // create a binary object with the calculated value.
 		return result;
-		
+
 	}
-	 /**
+
+    /**
     * Bitwise OR of two binary variables
     *
     * @param num1 The first addend object
@@ -158,4 +159,4 @@ public class Binary
         }
         return result;
     }
-}	
+}

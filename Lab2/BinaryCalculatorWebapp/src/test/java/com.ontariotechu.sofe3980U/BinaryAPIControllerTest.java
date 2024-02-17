@@ -32,7 +32,7 @@ public class BinaryAPIControllerTest {
     @Autowired
     private MockMvc mvc;
 
-   
+
     @Test
     public void add() throws Exception {
         this.mvc.perform(get("/add").param("operand1","111").param("operand2","1010"))//.andDo(print())
