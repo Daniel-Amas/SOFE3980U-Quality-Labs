@@ -56,5 +56,27 @@ public class BinaryControllerTest {
 			.andExpect(model().attribute("result", "1110"))
 			.andExpect(model().attribute("operand1", "111"));
     }
+    @Test
+    public void postTrailingZeros() throws Exception {
+        this.mvc.perform(post("/").param("operand1","000111").param("operator","+").param("operand2","000111"))//.andDo(print())
+        .andExpect(status().isOk())
+        .andExpect(view().name("result"))
+        .andExpect(model().attribute("result", "1110"));
+    }
+    @Test
+    public void postLargeBinaryNumbers() throws Exception {
+        this.mvc.perform(post("/").param("operand1", "1111111111111111").param("operator", "|").param("operand2", "1111111111111111"))
+        .andExpect(status().isOk())
+        .andExpect(view().name("result"))
+        .andExpect(model().attributeExists("result"));
+    }
+    @Test
+    public void postBinaryMultiplication() throws Exception {
+        this.mvc.perform(post("/").param("operand1", "101").param("operator", "*").param("operand2", "11"))
+        .andExpect(status().isOk())
+        .andExpect(view().name("result"))
+        .andExpect(model().attributeExists("result"))
+        .andExpect(model().attribute("result", "1111"));
+    }
 
 }

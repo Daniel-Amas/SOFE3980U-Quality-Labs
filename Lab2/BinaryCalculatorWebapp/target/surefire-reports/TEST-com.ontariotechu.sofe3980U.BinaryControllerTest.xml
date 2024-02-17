@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.ontariotechu.sofe3980U.HelloAPIControllerTest" time="0.569" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.ontariotechu.sofe3980U.BinaryControllerTest" time="0.941" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -58,10 +58,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="helloAPINoParameter" classname="com.ontariotechu.sofe3980U.HelloAPIControllerTest" time="0.013"/>
-  <testcase name="helloAPIWithName" classname="com.ontariotechu.sofe3980U.HelloAPIControllerTest" time="0.011"/>
-  <testcase name="EmailAPINoParameters" classname="com.ontariotechu.sofe3980U.HelloAPIControllerTest" time="0.015"/>
-  <testcase name="EmailAPIWithFirstName" classname="com.ontariotechu.sofe3980U.HelloAPIControllerTest" time="0.006"/>
-  <testcase name="EmailAPIWithFullName" classname="com.ontariotechu.sofe3980U.HelloAPIControllerTest" time="0.006"/>
-  <testcase name="EmailAPIWithLastName" classname="com.ontariotechu.sofe3980U.HelloAPIControllerTest" time="0.007"/>
+  <testcase name="getDefault" classname="com.ontariotechu.sofe3980U.BinaryControllerTest" time="0.412"/>
+  <testcase name="postParameter" classname="com.ontariotechu.sofe3980U.BinaryControllerTest" time="0.015"/>
+  <testcase name="getParameter" classname="com.ontariotechu.sofe3980U.BinaryControllerTest" time="0.004"/>
 </testsuite>
